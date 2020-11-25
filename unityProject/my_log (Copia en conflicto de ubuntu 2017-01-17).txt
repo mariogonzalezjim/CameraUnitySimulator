@@ -1,3 +1,0 @@
-Corrupt JPEG data: premature end of data segment
-Corrupt JPEG data: premature end of data segment
-Corrupt JPEG data: premature end of data segment
