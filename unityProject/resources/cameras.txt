@@ -1,0 +1,4 @@
+// cada linea una camara, formato:
+// nombre/fps/ancho de las imagenes en pixeles/largo/formato de la imagen/calidad imagen/posicion X/posicion Y/posicion Z/ rotacion X/ rotacion Z
+cam/10/640/480/0/75/9.816450/3.844200/15.368404/0.000000/0.000000
+cam2/10/640/480/0/75/4.816450/3.844200/25.368404/0.000000/0.000000

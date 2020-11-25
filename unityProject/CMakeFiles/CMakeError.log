@@ -1,0 +1,53 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/mario/Dropbox/TFG/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec948217384/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec948217384.dir/build.make CMakeFiles/cmTryCompileExec948217384.dir/build
+make[1]: se ingresa al directorio «/home/mario/Dropbox/TFG/CMakeFiles/CMakeTmp»
+/usr/bin/cmake -E cmake_progress_report /home/mario/Dropbox/TFG/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec948217384.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec948217384.dir/CheckSymbolExists.c.o   -c /home/mario/Dropbox/TFG/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec948217384
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec948217384.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec948217384.dir/CheckSymbolExists.c.o  -o cmTryCompileExec948217384 -rdynamic 
+CMakeFiles/cmTryCompileExec948217384.dir/CheckSymbolExists.c.o: En la función `main':
+CheckSymbolExists.c:(.text+0x16): referencia a `pthread_create' sin definir
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec948217384] Error 1
+make[1]: se sale del directorio «/home/mario/Dropbox/TFG/CMakeFiles/CMakeTmp»
+make: *** [cmTryCompileExec948217384/fast] Error 2
+
+File /home/mario/Dropbox/TFG/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/mario/Dropbox/TFG/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3805380746/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3805380746.dir/build.make CMakeFiles/cmTryCompileExec3805380746.dir/build
+make[1]: se ingresa al directorio «/home/mario/Dropbox/TFG/CMakeFiles/CMakeTmp»
+/usr/bin/cmake -E cmake_progress_report /home/mario/Dropbox/TFG/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3805380746.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec3805380746.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3805380746
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3805380746.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec3805380746.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3805380746 -rdynamic -lpthreads 
+/usr/bin/ld: no se puede encontrar -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec3805380746] Error 1
+make[1]: se sale del directorio «/home/mario/Dropbox/TFG/CMakeFiles/CMakeTmp»
+make: *** [cmTryCompileExec3805380746/fast] Error 2
+
+

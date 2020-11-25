@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC    -shared -Wl,-soname,libmenu.so -o libmenu.so CMakeFiles/menu.dir/menu.c.o CMakeFiles/menu.dir/varios.cpp.o CMakeFiles/menu.dir/conexion.cpp.o CMakeFiles/menu.dir/camara.cpp.o 

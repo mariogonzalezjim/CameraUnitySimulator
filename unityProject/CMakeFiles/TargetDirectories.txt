@@ -1,0 +1,2 @@
+/home/mario/Dropbox/TFG/trabajo/CMakeFiles/menu.dir
+/home/mario/Dropbox/TFG/trabajo/CMakeFiles/test.dir
